@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="APR___Aplikasi_Perlombaan_Renang.Views.KelolaAcaraPerlombaan"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:APR___Aplikasi_Perlombaan_Renang.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Label Margin="10,0,10,0" FontSize="24" Content="{Binding SelectedPerlombaan.NamaPerlombaan}"></Label>
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="10,0,10,0">Kelompok</Label>
+                <ComboBox ItemsSource="{Binding SelectedPerlombaan.ListKelompok}" DisplayMemberPath="NamaKelompok" SelectedItem="{Binding SelectedKelompok}"/>
+            </StackPanel>
+            <DataGrid ItemsSource="{Binding SelectedKelompok.ListAcara}" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10">
+                <DataGrid.Columns >
+                    <DataGridTemplateColumn Header="Gaya Renang">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox ItemsSource="{Binding DataContext.ListGaya, RelativeSource={RelativeSource AncestorType=UserControl}}" SelectedItem="{Binding Gaya, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="NamaGaya"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Jarak (meter)">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Jarak, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Jenis Acara">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox ItemsSource="{Binding DataContext.JenisAcaraHelper, RelativeSource={RelativeSource AncestorType=UserControl}}" DisplayMemberPath="Value" SelectedValuePath="Key" SelectedValue="{Binding JenisAcara, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Command="{Binding TambahAcara}" HorizontalAlignment="Right" Margin="10">Tambah Acara Baru</Button>
+        </StackPanel>
+        <Button Command="{Binding KelolaPerlombaanPageOpen}" Grid.Row="1" VerticalAlignment="Center" Margin="10" HorizontalAlignment="Left">Cancel</Button>
+        <Button Command="{Binding SubmitAcara}" Grid.Row="1" VerticalAlignment="Center" Margin="10" HorizontalAlignment="Right">Submit</Button>
+    </Grid>
+</UserControl>

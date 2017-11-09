@@ -1,0 +1,59 @@
+﻿<Controls:MetroWindow x:Class="APR___Aplikasi_Perlombaan_Renang.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APR___Aplikasi_Perlombaan_Renang"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Views="clr-namespace:APR___Aplikasi_Perlombaan_Renang.Views"
+        xmlns:ViewModels="clr-namespace:APR___Aplikasi_Perlombaan_Renang.ViewModels"
+        mc:Ignorable="d"
+        SaveWindowPosition="True"
+        Title="{Binding CurrentPage.PageName, StringFormat=APR - {0}}" Height="600" Width="800">
+    <Controls:MetroWindow.Resources>
+        <DataTemplate DataType="{x:Type ViewModels:MainMenu}">
+            <Views:MainMenu/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:KelolaPerlombaan}">
+            <Views:KelolaPerlombaan/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:BuatPerlombaan}">
+            <Views:BuatPerlombaan/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:EditPerlombaan}">
+            <Views:EditPerlombaan/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:KelolaGayaRenang}">
+            <Views:KelolaGayaRenang/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:KelolaAcaraPerlombaan}">
+            <Views:KelolaAcaraPerlombaan/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:KelolaPeserta}">
+            <Views:KelolaPeserta></Views:KelolaPeserta>
+        </DataTemplate>
+    </Controls:MetroWindow.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="#151515">
+            <Rectangle Height="150">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#027102"></SolidColorBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button Command="{Binding KelolaPerlombaanOpenPage}" Style="{DynamicResource SquareButtonStyle}" BorderThickness="0" HorizontalContentAlignment="Left" Controls:ControlsHelper.ContentCharacterCasing="Normal" Padding="20">Perlombaan</Button>
+            <Button Command="{Binding KelolaPesertaOpenPage}" Style="{DynamicResource SquareButtonStyle}" BorderThickness="0" HorizontalContentAlignment="Left" Controls:ControlsHelper.ContentCharacterCasing="Normal" Padding="20">Peserta</Button>
+            <Button Command="{Binding KelolaHasilPerlombaanOpenPage}" Style="{DynamicResource SquareButtonStyle}" BorderThickness="0" HorizontalContentAlignment="Left" Controls:ControlsHelper.ContentCharacterCasing="Normal" Padding="20">Hasil Perlombaan</Button>
+            <Button Command="{Binding KelolaGayaRenangOpenPage}" Style="{DynamicResource SquareButtonStyle}" BorderThickness="0" HorizontalContentAlignment="Left" Controls:ControlsHelper.ContentCharacterCasing="Normal" Padding="20">Gaya Renang</Button>
+        </StackPanel>
+        <!--<Border Grid.Column="1">
+            --><!--Test area jon-->
+            
+            <!--Test area jon--><!--
+        </Border>-->
+        <ContentControl Content="{Binding CurrentPage}" Grid.Column="1"/>
+    </Grid>
+</Controls:MetroWindow>

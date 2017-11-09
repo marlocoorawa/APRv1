@@ -1,0 +1,38 @@
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\APR - Aplikasi Perlombaan Renang.exe.config
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\APR - Aplikasi Perlombaan Renang.exe
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\APR - Aplikasi Perlombaan Renang.pdb
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\MahApps.Metro.dll
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\System.Windows.Interactivity.dll
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\MahApps.Metro.pdb
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\MahApps.Metro.xml
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang.csprojResolveAssemblyReference.cache
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\MainWindow.g.cs
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\App.g.cs
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang_MarkupCompile.cache
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang_MarkupCompile.lref
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\MainWindow.baml
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang.g.resources
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR___Aplikasi_Perlombaan_Renang.Properties.Resources.resources
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang.csproj.GenerateResource.Cache
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang.exe
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang.pdb
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\App.baml
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\PropertyChanged.dll
+c:\users\marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\PropertyChanged.xml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\MainMenu.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\MainMenu.baml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaPerlombaan.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaPerlombaan.baml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\bin\Debug\MySql.Data.dll
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\BuatPerlombaan.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\BuatPerlombaan.baml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\EditPerlombaan.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\EditPerlombaan.baml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaGayaRenang.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaGayaRenang.baml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaAcaraPerlombaan.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaAcaraPerlombaan.baml
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\APR - Aplikasi Perlombaan Renang.csproj.ResolveComReference.cache
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaPeserta.g.cs
+C:\Users\Marlo\documents\visual studio 2015\Projects\APR - Aplikasi Perlombaan Renang\APR - Aplikasi Perlombaan Renang\obj\Debug\Views\KelolaPeserta.baml

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="APR___Aplikasi_Perlombaan_Renang.Views.EditPerlombaan"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:APR___Aplikasi_Perlombaan_Renang.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="650">
+    <Border Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="10,0,0,0">
+                <Label>Nama Perlombaan</Label>
+                <TextBox Text="{Binding PerlombaanEdit.NamaPerlombaan}"></TextBox>
+                <Label>Tanggal Perlombaan</Label>
+                <DatePicker SelectedDate="{Binding PerlombaanEdit.TanggalPerlombaan}" />
+                <Label>Daftar Kelompok</Label>
+                <DataGrid ItemsSource="{Binding PerlombaanEdit.ListKelompok}" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns >
+                        <DataGridTextColumn Header="Kode Kelompok" Binding="{Binding KodeKelompok}"/>
+                        <DataGridTextColumn Header="Nama Kelompok" Binding="{Binding NamaKelompok}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Command="{Binding Cancel}"  VerticalAlignment="Center">Cancel</Button>
+                <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+                    <Button Command="{Binding HapusPerlombaan}" CommandParameter="{Binding PerlombaanEdit}" VerticalAlignment="Center" Margin="0,0,10,0" Background="#B92424">Hapus Perlombaan</Button>
+                    <Button Command="{Binding SubmitEditPerlombaan}" CommandParameter="{Binding PerlombaanEdit}" VerticalAlignment="Center" Margin="0,0,10,0" Background="#1F7811">Submit</Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="APR___Aplikasi_Perlombaan_Renang.Views.KelolaPerlombaan"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:APR___Aplikasi_Perlombaan_Renang.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Command="{Binding BuatPerlombaanPageOpen}" VerticalAlignment="Center" Margin="10" Background="#1F7811">Buat Perlombaan Baru</Button>
+        </StackPanel>
+        <Border Grid.Row="1" Padding="10">
+            <DataGrid ItemsSource="{Binding ListPerlombaan}" AutoGenerateColumns="False" IsReadOnly="True" SelectedItem="{Binding SelectedPerlombaan}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nama Lomba" Binding="{Binding NamaPerlombaan}"/>
+                    <DataGridTextColumn Header="Tanggal Perlombaan" Binding="{Binding TanggalPerlombaan,StringFormat=D}"/>
+                    <DataGridTemplateColumn Header="Edit">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Command="{Binding DataContext.EditPerlombaanPageOpen, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}">Edit Lomba</Button>
+                                    <Button Command="{Binding DataContext.KelolaAcaraPageOpen, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}">Edit Acara</Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+       
+    </Grid>
+</UserControl>
